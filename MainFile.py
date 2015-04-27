@@ -1,13 +1,15 @@
-#__V0.3__
+verion = "__V0.1.1__ Beta"
 
 key = False
 pants = False
 knife = False
 charhp = 10
+enehp = 7
 
 import random
 
 def commands():
+    print("########################################################")
     print("Commands:")
     print("Go <Direction> e.g.(west)")
     print("quit")
@@ -97,7 +99,7 @@ def bathroom():
         onedead = False
         while onedead == False:
             hitornot = random.randint(1, 5)
-            if hitornot > 3:
+            if hitornot >= 3:
                 print("THe old man punches you!")
                 global charhp
                 charhp = - 3
@@ -112,7 +114,41 @@ def bathroom():
                 print("You draw your knife and attack!")
                 if hitornot >= 2:
                     print("You stab the attacker!")
-
+                    enehp = - 6
+            if knife == False:
+                print("You raise you fists to prepare for a counter attack!")
+                if hitornot >= 2:
+                    print("You land a blow on your enemy!")
+                    enehp = - 3
+            if enehp <= 0:
+                print("You won the battle!")
+                print("Your enemy has died.")
+                onedead = True
+        def afterbattlebathroom():
+            print("There is a dead body a toilet and a sink here")
+            sinput = input("Enter a command: ")
+            if sinput == "Inspect toilet"
+                print("The toilet clean and white, and it still works. You lift the toilet bowl lid")
+                print("to find a small rusty key laying at the bottom.")
+                sinput = input("Take the key? y/n: ")
+                if sinput == "y":
+                    print("You take the rusty key.")
+                    afterbattlebathroom()
+                if sinput == "n":
+                    print("You leave the key.")
+                    afterbattlebathroom()
+            elif sinput == "exit":
+                hallway()
+            elif sinput == "search body":
+                print("You find a revolver, he must have been crazy not to use that in the battle.")
+                print("You take the revolver thinking it might be useful.")
+                global revolver
+                revolver = True
+                afterbattlebathroom()
+            else:
+                print("You cant do that")
+                afterbattlebathroom()
+        afterbattlebathroom()    
 
 
 import sys
@@ -124,12 +160,12 @@ print("|    |__  |    |  |    |  ___     |         |       |       |  |  |  __  
 print("|    |    |    |  |    |__| |     |   |\    /       |    ___/  |  |__| |      ")
 print("|____|    |____|   \________/     |___| \__|        |___|       \______/         ")
 print("                       ")
-print("Welcome to HGRPG Henry and Gabe's RolePlaying Game!")
+print("Welcome to HGRPG Henry and Gabe's Text and Terminal Based RolePlaying Game!")
 print("                      ")
-start = input("Type start to start")
+start = input("Type start to start: ")
 
 if start == "start":
-    print("Ok lets play")
+    print("Ok lets begin.")
 else:
     sys.exit
 
