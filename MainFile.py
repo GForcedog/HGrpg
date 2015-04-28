@@ -160,14 +160,14 @@ def bathroom():
 
 import sys
 
-print("______    ______                  _________         _______                  ")
-print("|    |    |    |    _______       |  ____  \        | _____\     ______        ")
-print("|    |____|    |   /    ___\      | |____|  \       | |___| \   / _____\      ")
-print("|    |__  |    |  |    |  ___     |         |       |       |  |  |  __      ")
-print("|    |    |    |  |    |__| |     |   |\    /       |    ___/  |  |__| |      ")
-print("|____|    |____|   \________/     |___| \__|        |___|       \______/         ")
+print("_________      ______    ______                  _________     _______                    ")
+print("|  ____  \     |    |    |    |    _______       |  ____  \    | _____\     _______       ")
+print("| |____|  \    |    |____|    |   /    ___\      | |____|  \   | |___| \   / ______\      ")
+print("|         |    |     ____     |   |   |  ___     |         |   |       |   |  |  ___      ")
+print("|   |\    /    |    |    |    |   |   |__| |     |   |\    /   |    ___/   |  |__| |      ")
+print("|___| \__|     |____|    |____|   \________/     |___| \__|    |___|       \_______/      ")
 print("                       ")
-print("Welcome to HGRPG Henry and Gabe's Text and Terminal Based RolePlaying Game!")
+print("Welcome to RHGRPG Henry and Gabe's Text and Terminal Based RolePlaying Game!")
 print("                      ")
 start = input("Type start to start: ")
 
