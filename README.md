@@ -1,3 +1,3 @@
-# HGrpg
-A mini rpg made by gabe and henry
+# RHGrpg
+A mini rpg made by gabe, henry, and renn.
 
