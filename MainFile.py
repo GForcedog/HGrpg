@@ -88,7 +88,7 @@ def hallway():
         print("#######################")
         print("#YOU DIE!!!!!!!!!!!!!!#")
         print("#######################")
-        sys.exit
+        sys.exit()
     elif hall == "help":
         commands()
         hallway()
@@ -174,7 +174,7 @@ start = input("Type start to start: ")
 if start == "start":
     print("Ok lets begin.")
 else:
-    sys.exit
+    sys.exit()
 
 
 
