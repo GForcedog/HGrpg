@@ -56,19 +56,26 @@ def bedroom():
             print("You take the key.")
         bedroom()
     if what == "inspect mirror":
-        print("You have a nice tank top but your pants are torn and you could use some new.")
+        print("You have a nice shirt but your pants are torn and you could use some new one.")
     else:
         print("You can't do that.")
         bedroom()
-e
+
 
 def closet():
     print("-Broom closet-")
     print("There are many cobwebs in here, You find a broom, a dust pan, a locked box.")
+    1what = input("Enter a command: ")
+    if 1what == "pick up box":
+        box = True
+        print("You pick up the box")
+        closet()
+    elif 1what == "exit":
+        hallway()
 
 
 def hallway():
-    print("You are in a dim hallway, there are 4 doors here, one in each direction(north, south, east, and west)")
+    print("You are in a dim hallway, there are 4 doors here, one in each direction (north, south, east, and west).")
     hall = input("enter a command: ")
     if hall == "go north":
         bathroom()
