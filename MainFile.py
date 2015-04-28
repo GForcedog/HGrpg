@@ -29,10 +29,15 @@ def kitchen():
     if kitcheninput == "inspect cabinets":
         print("The cabinets are empty except for a rusty knife.")
         cabinetinput = input("Enter a command:")
-        if cabinetinput == "pick up knife":
-            global knife
-            knife = True
-            print("You pick up the knife")
+        if key == False:
+            if cabinetinput == "pick up knife":
+                global knife
+                knife = True
+                print("You pick up the knife")
+                kitchen()
+        elif key == True:
+            print("You already have this.")
+            kitchen()
         if cabinetinput == "exit":
             kitchen()
     else:
@@ -50,11 +55,15 @@ def bedroom():
     if what == "inspect dresser":
         print("You rummage through the dresser only to find pants and a copper key.")
         pickup = input("enter a command: ")
-        if pickup == "pick up key":
-            global key
-            key = True
-            print("You take the key.")
-        bedroom()
+        if key == False:
+            if pickup == "pick up key":
+                global key
+                key = True
+                print("You take the key.")
+        elif key == True:
+            if pickup == "pick up key":
+                print("You already have this.")
+                bedroom()
     if what == "inspect mirror":
         print("You have a nice shirt but your pants are torn and you could use some new one.")
     else:
