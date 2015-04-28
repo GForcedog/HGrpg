@@ -113,7 +113,7 @@ def bathroom():
                 print("You have recived 3 points of damage!")
                 if charhp <= 0:
                     print("You died!")
-                    onedead = True
+                    sys.exit()
             else:
                 print("The old man's punch misses you!")
             hitornot = random.randint(1, 5)
