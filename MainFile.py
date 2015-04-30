@@ -74,12 +74,12 @@ def bedroom():
 def closet():
     print("-Broom closet-")
     print("There are many cobwebs in here, You find a broom, a dust pan, a locked box.")
-    1what = input("Enter a command: ")
-    if 1what == "pick up box":
+    what1 = input("Enter a command: ")
+    if what1 == "pick up box":
         box = True
         print("You pick up the box")
         closet()
-    elif 1what == "exit":
+    elif what1 == "exit":
         hallway()
 
 
