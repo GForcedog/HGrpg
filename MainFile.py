@@ -143,7 +143,7 @@ def bathroom():
         def afterbattlebathroom():
             print("There is a dead body a toilet and a sink here")
             sinput = input("Enter a command: ")
-            if sinput == "Inspect toilet"
+            if sinput == "Inspect toilet":
                 print("The toilet clean and white, and it still works. You lift the toilet bowl lid")
                 print("to find a small rusty key laying at the bottom.")
                 sinput = input("Take the key? y/n: ")
