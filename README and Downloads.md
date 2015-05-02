@@ -7,3 +7,5 @@ get python 3.4.
 1.If mainfile.py opens with IDLE good. Go to run/run module.
 ######################################################################
 2.If not right click/open with/IDLE. Next go to step 1.
+######################################################################
+DO NOT FORK!!!!!!!!!!! NO NO NO NOOOOOOOOO!  !@@$#%@#$!$%#
