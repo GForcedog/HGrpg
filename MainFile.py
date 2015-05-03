@@ -60,6 +60,7 @@ def bedroom():
                 global key
                 key = True
                 print("You take the key.")
+                bedroom()
         elif key == True:
             if pickup == "pick up key":
                 print("You already have this.")
