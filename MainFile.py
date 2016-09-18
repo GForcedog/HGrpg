@@ -1,4 +1,4 @@
-verion = "__V0.1.1__ Beta"
+version = "__V0.1.1__ Beta"
 
 key = False
 pants = False
@@ -14,14 +14,14 @@ def commands():
     print("Go <Direction> e.g.(west)")
     print("quit")
     print("pick up/drop <item>")
-    print("Also more specific commands e.g(open door)")
+    print("investigate")
     print("exit")
     print("########################################################")
 
 
 def kitchen():
     print("-Kitchen-")
-    print("You walk into a room that smells of onions. You assume it is the kitchen because of the pots and pans.")
+    print("You are in a room that smells of onions. You assume it is the kitchen because of the pots and pans.")
     print("There is a counter and a table and several cabinets.")
     kitcheninput = input("Enter a command: ")
     if kitcheninput == "exit":
